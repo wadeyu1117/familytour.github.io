@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="查看發慕利包車旅遊提供的舒適、安全、乾淨的包車車輛，包含詳細規格與照片。">
+    <title>車輛介紹 - 發慕利包車旅遊</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 注意：vehicles.html 的 CSS 中可能沒有包含特定於此頁面的樣式，
+         如果需要，可以取消註解 style.css 中的 .vehicle-item 相關樣式，或在此處添加 -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">發慕利包車旅遊</div>
+            <nav>
+                <button class="nav-toggle" aria-label="開啟導航">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="services.html">服務項目</a></li>
+                    <li><a href="vehicles.html" class="active">車輛介紹</a></li>
+                    <li><a href="routes.html">行程推薦</a></li>
+                    <li><a href="pricing.html">價格說明</a></li>
+                    <li><a href="testimonials.html">客戶評價</a></li>
+                    <li><a href="faq.html">常見問題</a></li>
+                    <li><a href="contact.html">聯絡預訂</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1>我們的車輛</h1>
+        <p>我們深知旅途的舒適與安全至關重要。我們提供以下經過精心維護、乾淨整潔的車輛供您選擇。</p>
+
+        <!-- 車輛一 -->
+        <article class="vehicle-item">
+            <div class="vehicle-images">
+                <img src="images/vehicle1-exterior.jpg" alt="[車型一 例如：Toyota Sienta] 外觀"> <!-- 替換圖片 -->
+                <img src="images/vehicle1-interior.jpg" alt="[車型一 例如：Toyota Sienta] 內裝"> <!-- 替換圖片 -->
+            </div>
+            <div class="vehicle-details">
+                <h2>[車型一 例如：舒適轎旅車 Toyota Sienta 或類似車款]</h2>
+                <p><strong>建議載客數：</strong> 1 - 4 人</p>
+                <p><strong>行李容量：</strong> 約 2-3 件中型行李</p>
+                <p><strong>特色：</strong></p>
+                <ul>
+                    <li>車內空間寬敞，適合小家庭或朋友出遊。</li>
+                    <li>油耗表現佳，兼顧環保與成本。</li>
+                    <li>[可加入其他特色，例如：滑門方便上下車]</li>
+                    <li>定期清潔消毒，保持清新。</li>
+                </ul>
+                <p><strong>安全保障：</strong> 配備基本安全氣囊、ABS，並定期進行專業保養檢查，投保高額乘客責任險。</p>
+            </div>
+        </article>
+
+        <!-- 車輛二 -->
+        <article class="vehicle-item">
+            <div class="vehicle-images">
+                <img src="images/vehicle2-interior.jpg" alt="[車型二 例如：Volkswagen T6/T5] 外觀"> <!-- 替換圖片 -->
+                <img src="images/vehicle2-exterior.jpg" alt="[車型二 例如：Volkswagen T6/T5] 內裝"> <!-- 替換圖片 -->
+            </div>
+            <div class="vehicle-details">
+                <h2>[車型二 例如：豪華商務車 福斯 T6/T5 或類似車款]</h2>
+                <p><strong>建議載客數：</strong> 1 - 7/8 人 (視座椅配置)</p>
+                <p><strong>行李容量：</strong> 約 5-8 件中大型行李 (視載客人數調整)</p>
+                <p><strong>特色：</strong></p>
+                <ul>
+                    <li>空間極為寬敞，座椅舒適，適合多人團體或家庭。</li>
+                    <li>行車穩定，長途旅行首選。</li>
+                    <li>[可加入其他特色，例如：獨立空調、充足的置杯架]</li>
+                    <li>免費提供瓶裝水。</li>
+                    <li>[可選] 車內 Wi-Fi、USB 充電埠。</li>
+                </ul>
+                <p><strong>安全保障：</strong> 高規格安全配備，定期原廠等級保養，投保最高額度乘客責任險，確保您的旅途安心無虞。</p>
+            </div>
+        </article>
+
+        <!-- 若有更多車型，可複製上面的 article 區塊 -->
+
+        <hr style="margin: 50px 0 30px 0; border: 0; border-top: 1px solid #eee;">
+
+        <h2 style="text-align: center;">共同特色與承諾</h2>
+        <ul style="list-style: none; padding: 0; max-width: 800px; margin: 20px auto 0 auto; text-align: left;">
+             <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                 <i class="fas fa-pump-soap" style="color: #007bff; font-size: 1.3em; margin-right: 15px; width: 20px; text-align: center;"></i>
+                 <strong>定期清潔：</strong> 每次出車前都會進行清潔消毒，確保車內環境衛生。
+             </li>
+             <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                 <i class="fas fa-tools" style="color: #007bff; font-size: 1.3em; margin-right: 15px; width: 20px; text-align: center;"></i>
+                 <strong>安全檢查：</strong> 定期進行輪胎、煞車、油水等安全檢查與保養。
+             </li>
+              <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                 <i class="fas fa-id-card" style="color: #007bff; font-size: 1.3em; margin-right: 15px; width: 20px; text-align: center;"></i>
+                 <strong>合法營運：</strong> [若適用] 使用合法租賃車輛或自有營業車輛。
+             </li>
+             <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                 <i class="fas fa-shield-heart" style="color: #007bff; font-size: 1.3em; margin-right: 15px; width: 20px; text-align: center;"></i>
+                 <strong>高額保險：</strong> 每位乘客均享有高額乘客責任險保障。
+             </li>
+              <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                 <i class="fas fa-gift" style="color: #007bff; font-size: 1.3em; margin-right: 15px; width: 20px; text-align: center;"></i>
+                 <strong>貼心小物：</strong> [可選] 依情況提供雨傘、濕紙巾、瓶裝水等。
+             </li>
+        </ul>
+        <p style="text-align: center; margin-top: 30px;">我們會根據您的預訂人數和行李數量，安排最適合的車輛。若您有指定車型的需求，請在預訂時告知。</p>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 發慕利包車旅遊. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

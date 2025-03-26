@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="聯絡發慕利包車旅遊預訂台灣包車服務或諮詢行程，提供電話、Email、通訊軟體及線上表單。">
+    <title>聯絡我們 & 預訂 - 發慕利包車旅遊</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Contact Form CSS 已包含在 style.css 中 -->
+</head>
+<body>
+    <header>
+         <div class="container">
+            <div class="logo">發慕利包車旅遊</div>
+            <nav>
+                <button class="nav-toggle" aria-label="開啟導航">☰</button>
+                 <ul class="nav-menu">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="services.html">服務項目</a></li>
+                    <li><a href="vehicles.html">車輛介紹</a></li>
+                    <li><a href="routes.html">行程推薦</a></li>
+                    <li><a href="pricing.html">價格說明</a></li>
+                    <li><a href="testimonials.html">客戶評價</a></li>
+                    <li><a href="faq.html">常見問題</a></li>
+                    <li><a href="contact.html" class="active">聯絡預訂</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1>聯絡我們 & 預訂行程</h1>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 50px auto;">感謝您對我們的服務感興趣！您可以透過以下任何方式與我們聯繫，諮詢行程、詢問報價或進行預訂。我們期待為您服務！</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>聯繫方式</h2>
+                <p><i class="fas fa-phone"></i><strong>電話:</strong> <a href="tel:[您的電話號碼]">[您的電話號碼]</a></p>
+                <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:[您的Email]">[您的Email]</a></p>
+                <p><i class="fab fa-line"></i><strong>LINE ID:</strong> <span>[您的LINE ID]</span> <!-- <a href="[您的LINE QR Code圖片連結]" target="_blank"><img src="images/line-qrcode.png" alt="LINE QR Code" class="qr-code"></a> --></p>
+                <p><i class="fab fa-whatsapp"></i><strong>WhatsApp:</strong> <a href="https://wa.me/[您的國際區號+號碼]" target="_blank">[您的WhatsApp號碼]</a></p>
+                <p><i class="fab fa-weixin"></i><strong>WeChat ID:</strong> <span>[您的WeChat ID，如果有的話]</span></p>
+                <p><i class="fas fa-clock"></i><strong>服務時間:</strong> <span>[您的服務時間，例如：每日 08:00 - 22:00 (若無人接聽請留言)]</span></p>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>線上預訂 / 諮詢表單</h2>
+                <p>請填寫以下表單，我們會盡快與您聯繫。標示 * 為必填項目。</p>
+
+                <!-- Formspree Endpoint Updated -->
+                <form class="contact-form" action="https://formspree.io/f/xldjloyp" method="POST">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">您的姓名 *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email 信箱 *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">聯絡電話 (含國碼佳)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">乘客人數 *</label>
+                            <input type="number" id="passengers" name="passengers" min="1" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                       <div class="form-group">
+                            <label for="luggage">預計行李件數 (大/中/小)</label>
+                            <input type="text" id="luggage" name="luggage" placeholder="例如：2大1小">
+                        </div>
+                         <div class="form-group">
+                             <label for="service-type">希望的服務類型</label>
+                             <select id="service-type" name="service_type">
+                                 <option value="">請選擇 (可選)</option>
+                                 <option value="機場接送">機場接送</option>
+                                 <option value="一日遊包車">一日遊包車</option>
+                                 <option value="多日遊包車">多日遊包車</option>
+                                 <option value="點對點接送">點對點接送</option>
+                                 <option value="商務包車">商務包車</option>
+                                 <option value="其他諮詢">其他諮詢</option>
+                             </select>
+                        </div>
+                    </div>
+
+                     <div class="form-row">
+                        <div class="form-group">
+                             <label for="start-date">預計開始日期 *</label>
+                             <input type="date" id="start-date" name="start_date" required>
+                        </div>
+                        <div class="form-group">
+                             <label for="end-date">預計結束日期 (若為多日)</label>
+                             <input type="date" id="end-date" name="end_date">
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="pickup-location">預計接送地點 / 飯店名稱</label>
+                        <input type="text" id="pickup-location" name="pickup_location">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">您的行程想法、需求或其他問題 *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="請盡量詳細說明您想去的景點、旅遊天數、特殊需求 (如嬰兒座椅)、是否需要外語服務等..."></textarea>
+                    </div>
+
+                    <!-- Hidden Fields -->
+                    <input type="hidden" name="_subject" value="來自網站的包車諮詢 (發慕利包車旅遊)">
+                    <input type="hidden" name="_replyto" value="email">
+
+                    <div style="text-align: left; margin-top: 10px;"> <!-- 按鈕容器 -->
+                        <button type="submit" class="btn">提交諮詢</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="booking-process">
+            <strong>預訂流程：</strong>
+            <ol>
+                <li>您提交需求 (透過表單、Email 或通訊軟體)。</li>
+                <li>我們根據您的需求與您討論細節並提供報價。</li>
+                <li>確認行程與價格後，您支付訂金完成預訂。</li>
+                <li>我們將發送預訂確認信函。</li>
+                <li>期待在台灣與您見面！</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+         <div class="container">
+            <p>&copy; 2024 發慕利包車旅遊. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
